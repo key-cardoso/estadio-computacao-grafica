@@ -1,0 +1,217 @@
+#VRML V2.0 utf8
+#base geral
+Transform {
+	translation 0 -2.2 0
+	scale -1.5 0.1 1
+	
+	children [
+Shape {
+	appearance Appearance {
+		material Material {
+			diffuseColor 33 34 6
+			specularColor 29 29 29
+			ambientIntensity 33
+			shininess 79
+			
+		}
+	}
+	geometry Extrusion {
+		scale 12 12
+		solid FALSE
+	
+	}
+
+}
+	]
+}
+#campo de futebol
+Transform {
+	translation 0 -2 0
+	scale -1.5 0.1 1
+	
+	children [
+Shape {
+	appearance Appearance {
+		texture	ImageTexture {
+			url	["base.jpg"]
+		}
+	}
+	geometry Box {
+		size 8 0.1 5
+	
+	}
+
+}
+	]
+}
+
+#assentos1
+Transform {
+	rotation 0 0 1 0.6
+	translation -10 0 -0.4
+	scale 1 2 1
+	
+children [
+Shape {
+	geometry Box {
+		size 0.1 2 8
+	
+	}
+	appearance Appearance {
+		texture	ImageTexture {
+			url	["cadeiras.png"]				
+		}
+	}
+}
+]
+}
+
+#assentos2
+Transform {
+	rotation 0 0 1 -0.7
+	translation 10 0 -0.5
+	scale 1 2 1
+children [
+Shape {
+	geometry Box {
+		size 0.1 2 8
+	
+	}
+	appearance Appearance {
+		texture	ImageTexture {
+			url	["cadeiras.png"]	
+		}
+	}
+}
+]
+}
+
+#publi topo
+Transform {
+	translation 0 -1.5 -4
+	scale 1 1 1
+children [
+Shape {
+	geometry Box {
+		size 14 0.5 0.2
+	
+	}
+	appearance Appearance {
+		texture	ImageTexture {
+			url	["publi.png"]	
+		}
+	}
+}
+]
+}
+#publi inferior
+Transform {
+	translation 0 -1.5 5
+	scale 1 1 1
+children [
+Shape {
+	geometry Box {
+		size 14 0.5 0.2
+	
+	}
+	appearance Appearance {
+		texture	ImageTexture {
+			url	["publi.png"]	
+		}
+	}
+}
+]
+}
+
+#barra esquerda
+Transform {
+	translation -8.5 -1.5 -0.5
+	scale 2 0.5 1
+children [
+Shape {
+	geometry Box {
+		size 0.1 2 8
+	}
+}
+]
+}
+#barra direita
+Transform {
+	translation 8.5 -1.5 -0.5
+	scale 2 0.5 1
+children [
+Shape {
+	geometry Box {
+		size 0.1 2 8
+	}
+}
+]
+}
+
+#assentos 
+Transform {
+	rotation 0 0 1 0
+	translation 0 0 -7
+	scale 1 2 1
+	
+children [
+Shape {
+	geometry Box {
+		size 17 2 0.1
+	
+	}
+	appearance Appearance {
+		texture	ImageTexture {
+			url	["cadeiras.png"]				
+		}
+	}
+}
+]
+}
+
+Transform {
+	rotation 0 0 1 0
+	translation 0 0 7
+	scale 1 2 1
+	
+children [
+Shape {
+	geometry Box {
+		size 17 2 0.1
+	
+	}
+	appearance Appearance {
+		texture	ImageTexture {
+			url	["cadeiras.png"]				
+		}
+	}
+}
+]
+}
+#Adicionado cilindro ao redor
+Transform {
+	scale 1 1 1
+	translation 0 -2 0
+	children [
+Shape {
+	geometry Cylinder {
+		radius 12.2
+		height 8
+		top FALSE
+	} 
+	appearance Appearance {
+		material Material {
+			diffuseColor .23 .2 .43
+			specularColor .32 .4 .4
+			ambientIntensity .0733
+			shininess .54
+			
+		}
+	}
+	
+
+}
+	]
+}
+
+
